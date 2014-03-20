@@ -4,7 +4,6 @@ lazy val scalaInAction = Project(
   settings =
     Common.settings ++ 
     List(
-      libraryDependencies ++= Dependencies.scalaInAction,
-      initialCommands := """|import name.heikoseeberger.scalainaction._""".stripMargin
+      libraryDependencies ++= Dependencies.scalaInAction
     )
 )
