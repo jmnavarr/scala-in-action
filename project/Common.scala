@@ -20,8 +20,6 @@ object Common {
         "-target:jvm-1.7",
         "-encoding", "UTF-8"
       ),
-      unmanagedSourceDirectories in Compile := List((scalaSource in Compile).value),
-      unmanagedSourceDirectories in Test := List((scalaSource in Test).value),
       // Scalariform settings
       ScalariformKeys.preferences := ScalariformKeys.preferences.value
         .setPreference(AlignSingleLineCaseStatements, true)
