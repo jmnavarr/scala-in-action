@@ -2,6 +2,10 @@ class Bird {
   def fly = "I can fly"
 }
 
-class Fish {
+trait Swimmer {
   def swim = "I can swim"
 }
+
+class Fish extends Swimmer
+
+class Duck extends Bird with Swimmer
