@@ -1,4 +1,4 @@
-case class Time(hours: Int, minutes: Int) {
+case class Time(hours: Int = 0, minutes: Int = 0) {
 
   def minus(that: Time): Int = this.asMinutes - that.asMinutes
 
